@@ -1,0 +1,44 @@
+{{#if (eq variant "list")}}
+<div class="flex flex-col {{class}}">
+  {{#if title}}
+  <h3 {{#if class}} class="text-h3-clamp" {{/if}}>{{title}}</h3>
+  {{/if}}
+  <{{listType}} class="{{listClass}}">
+    {{>sublist listItems sub=sub actions=actions}}
+    </ul>
+</div>
+
+{{else if (eq variant "menu")}}
+<ul {{#if class}} class="{{listClass}}" {{/if}}>
+  {{#if sub}}
+  {{>sublist listItems sub=sub actions=actions}}
+  {{else}}
+  {{#each listItems}}
+  <li>{{>link this}}</li>
+  {{/each}}
+  {{/if}}
+</ul>
+
+{{else if (eq variant "dropdown")}}
+<div class="dropdown {{dropdownClass}}">
+  <div tabindex="0" role="button" class="btn btn-secondary lg:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+    </svg>
+  </div>
+  <ul tabindex="0" class="dropdown-content z-[1] {{dropdownContent}}">
+    {{>sublist listItems sub=sub actions=actions}}
+  </ul>
+</div>
+
+{{else}}
+<nav {{#if class}} class="{{class}}" {{/if}}>
+  {{#if title}}
+  <h3 class="footer-title text-h3-clamp">{{title}}</h3>
+  {{/if}}
+  {{#each listItems}}
+  {{>link this}}
+  {{/each}}
+</nav>
+
+{{/if}}

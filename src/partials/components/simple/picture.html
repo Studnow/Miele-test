@@ -1,0 +1,7 @@
+<picture class="{{class}}">
+  {{#if modern}}
+  <source type="webp" srcset="/assets/img/compressed/{{name}}.webp" alt="{{alt}}" />
+   {{/if}}
+  <img src="/assets/img/compressed/{{name}}.{{ext}}" {{#if w}}width="{{w}}" {{/if}} {{#if h}}height="{{h}}" {{/if}}
+    alt="{{title}}" loading="lazy" />
+</picture>

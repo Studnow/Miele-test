@@ -1,0 +1,33 @@
+{{#if sub}}
+{{#each before}}
+<li>{{>link this}}</li>
+{{/each}}
+<li>
+  <details>
+    <summary class="">{{sub.subHeading}}</summary>
+    <ul class="{{subListClass}}">
+      {{#each sub.listItems}}
+      <li>
+        <h2 class="menu-title">{{title}}</h2>
+        <ul>
+          {{#each items}}
+          <li>{{>link this}}</li>
+          {{/each}}
+        </ul>
+      </li>
+      {{/each}}
+      </ul>
+  </details>
+</li>
+{{#each after}}
+<li>{{>link this}}</li>
+{{/each}}
+{{else if actions}}
+{{#each this}}
+<li>{{>link this}}</li>
+{{/each}}
+{{else}}
+{{#each this}}
+<li>{{>link this}}</li>
+{{/each}}
+{{/if}}

@@ -1,0 +1,26 @@
+{
+  "design": [
+    "каталог",
+    "links",
+    "сервис",
+    "окомпании",
+    "container",
+    "copyright",
+    "category",
+    "subtext",
+    "text",
+    "buttons",
+    "категории",
+    "name",
+    "преимущества",
+    "lefr",
+    "landuage",
+    "head",
+    "subcategory"
+  ],
+  "⚙️ component": [
+    "sizemobstatedefault",
+    "sizelargestatedefault",
+    "sizelargestatehover"
+  ]
+}

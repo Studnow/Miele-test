@@ -6,25 +6,28 @@ import baseSection from "./base/baseSection.js";
 import heading from "../data/components/heading.js";
 import style from "./defaultStyles/sectionStyle.js";
 
-import { card, button, list, slider, picture, link, icon, dynForm } from "./componentsMap.js";
+import { card, button, list, slider, picture, link, icon, dynForm, dynamicForm } from "../data/components/index";
 
 // icon preview for sorting on starting project
-// const iconDir = resolve(__dirname, "../../assets/icons/miele"); // Путь к SVG
-// const icons = readdirSync(iconDir)
-//   .filter((file) => file.endsWith(".svg"))
-//   .map((file) => ({
-//     src: `/assets/icons/raw/${file}`,
-//     name: file.replace(/\.svg$/, ""), // Удаляем .svg из имени,
-//   }))
-//   .sort((a, b) => a.name.localeCompare(b.name));
+const iconDir = resolve(__dirname, "../../assets/icons"); // Путь к SVG
+const icons = readdirSync(iconDir)
+  .filter((file) => file.endsWith(".svg"))
+  .map((file) => ({
+    src: `/assets/icons/${file}`,
+    name: file.replace(/\.svg$/, ""), // Удаляем .svg из имени,
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 // Генерируем массив компонентов card для каждой иконки
-// const iconsPreview = icons.map((iconRaw) => ({
-//   ...link,
-//   text: iconRaw.name,
-//   class: link.class.concat(" w-60"),
-//   icon: { ...link.icon, id: iconRaw.name, w: "48" },
-// }));
+const iconsPreview = icons.map((iconRaw) => ({
+  ...card,
+  cardClass: "w-60 h-full",
+  cardActions: false,
+  heading: {
+    description: iconRaw.name,
+  },
+  picture: { ...picture.icon, path: `${iconRaw.src}`, w: "48 ", h: "60" },
+}));
 
 const slideCards = [
   { title: "first", picture: { name: "name", ext: "ext" } },
@@ -42,7 +45,7 @@ export const sectionsMap = {
     style,
     heading: { ...heading, title: "Icons Preview" },
     colClass: "col-span-12 flex flex-wrap gap-6",
-    components: [] // iconsPreview],
+    components: [iconsPreview],
   },
   hero: {
     ...baseSection,

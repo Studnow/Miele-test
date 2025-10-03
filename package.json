@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "collect:components": "node scripts/collect-components.mjs"
   },
   "devDependencies": {
     "@spiriit/vite-plugin-svg-spritemap": "^3.0.0",

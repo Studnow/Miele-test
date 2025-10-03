@@ -1,22 +1,23 @@
 // 🚀 Автоматически сгенерировано скриптом buildComponentsMap.js
 
-import accordion from '../data/components/accordion.js';
-import button from '../data/components/button.js';
-import {card} from '../data/components/card.js';
+import accordion from '../../src/data/components/accordion.js';
+import button from '../../src/data/components/button.js';
+import {card} from '../../src/data/components/card.js';
 // import carousel from '../data/components/carousel.js';
 // import countdown from '../data/components/countdown.js';
-import dynForm from '../data/components/dynForm.js';
-import icon from '../data/components/icon.js';
-import link from "../data/components/link.js";
-import list from '../data/components/list.js';
-import logo from '../data/components/logo.js';
-import menu from '../data/components/menu.js';
-import pagination from '../data/components/pagination.js';
-import picture from '../data/components/picture.js';
-import rating from '../data/components/rating.js';
+import dynForm from '../../src/data/components/dynForm.js';
+import dynamicForm from '../../src/data/components/dynamicForm.js';
+import icon from '../../src/data/components/icon.js';
+import link from "../../src/data/components/link.js";
+import list from '../../src/data/components/list.js';
+import logo from '../../src/data/components/logo.js';
+import menu from '../../src/data/components/menu.js';
+import pagination from '../../src/data/components/pagination.js';
+import picture from '../../src/data/components/picture.js';
+import rating from '../../src/data/components/rating.js';
 // import skeleton from '../data/components/skeleton.js';
-import slider from '../data/components/slider.js';
-import sliderParts from '../data/components/cfg/sliderParts.js';
+import slider from '../../src/data/components/slider.js';
+import sliderParts from '../../src/data/components/cfg/sliderParts.js';
 // import steps from '../data/components/steps.js';
 // import table from '../data/components/table.js';
 // import tabs from '../data/components/tabs.js';
@@ -30,6 +31,7 @@ export const componentsMap = {
   // "carousel": carousel,
   // "countdown": countdown,
   "dynForm": dynForm,
+  "dynamicForm": dynamicForm,
   "icon": icon,
   "list": list,
   "logo": logo,
@@ -56,6 +58,7 @@ export {
   // carousel,
   // countdown,
   dynForm,
+  dynamicForm,
   icon,
   list,
   menu,

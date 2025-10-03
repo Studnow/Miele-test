@@ -11,8 +11,10 @@ const FILE_KEY = keys.FILE;
 const PAGES = keys.PAGES;
 const FRAMES_TO_EXTRACT = keys.FRAMES_TO_EXTRACT;
 
-const IMAGE_DIR = "assets/images/raw";
-const ICON_DIR = "assets/icons/raw";
+console.log("Фреймы", FRAMES_TO_EXTRACT);
+
+const IMAGE_DIR = "assets/generated/images/";
+const ICON_DIR = "assets/generated/icons/";
 const existingHashes = new Set();
 
 const __filename = fileURLToPath(import.meta.url);

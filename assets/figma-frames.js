@@ -31,7 +31,7 @@ export default {
       "navigation",
       "Theme",
     ],
-    toExtract: ["favicon", "icons", "Logo", "advantage"],
+    toExtract: ["icons", "Logo", "favicon", "advantage"],
     bad_nodes: [],
     recommendations:
       "Добавьте имена из nodeKeys в toExtract в figmaFrames.json. Исключите ненужные узлы через EXCLUDE_NODES.",

@@ -1,9 +1,9 @@
 export default {
   mytheme: {
-    primary: "#232323",
+    primary: "#8C0014",
     secondary: "#9D9D9D",
-    accent: "oklch(0.44 0.05 70.03 / 1)",
-    neutral: "#FAFAFA", // colors for active and hover menu
+    accent: "#F59B00",
+    neutral: "#D1D8DB", // colors for active and hover menu
     "neutral-content": "oklch(0.96 0 0 / 1)",
     "base-100": "#FFFFFF",
     info: "#A8E2F0",

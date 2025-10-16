@@ -11,7 +11,7 @@ export default {
       "popup-Ключевые особенности",
       "Product page",
     ],
-    toExtract: ["Home 2", "hover-block", "mob/Home"],
+    toExtract: ["hover-block"],
     bad_nodes: [],
     recommendations:
       "Добавьте имена из nodeKeys в toExtract в figmaFrames.json. Исключите ненужные узлы через EXCLUDE_NODES.",
@@ -31,7 +31,7 @@ export default {
       "navigation",
       "Theme",
     ],
-    toExtract: ["icons", "Logo", "favicon", "advantage"],
+    toExtract: ["icons", "Logo", "favicon"],
     bad_nodes: [],
     recommendations:
       "Добавьте имена из nodeKeys в toExtract в figmaFrames.json. Исключите ненужные узлы через EXCLUDE_NODES.",

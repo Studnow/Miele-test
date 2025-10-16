@@ -12,15 +12,10 @@
     "buttons",
     "категории",
     "name",
+    "subcategory",
     "преимущества",
     "lefr",
-    "landuage",
-    "head",
-    "subcategory"
+    "landuage"
   ],
-  "⚙️ component": [
-    "sizemobstatedefault",
-    "sizelargestatedefault",
-    "sizelargestatehover"
-  ]
+  "⚙️ component": []
 }

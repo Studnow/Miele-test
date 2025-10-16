@@ -8,26 +8,28 @@ import style from "./defaultStyles/sectionStyle.js";
 
 import { card, button, list, slider, picture, link, icon, dynForm, dynamicForm } from "../data/components/index";
 
+import assets from "../../assets/assetsData.js";
+
 // icon preview for sorting on starting project
-// const iconDir = resolve(__dirname, "../../assets/icons"); // Путь к SVG
-// const icons = readdirSync(iconDir)
-//   .filter((file) => file.endsWith(".svg"))
-//   .map((file) => ({
-//     src: `/assets/icons/${file}`,
-//     name: file.replace(/\.svg$/, ""), // Удаляем .svg из имени,
-//   }))
-//   .sort((a, b) => a.name.localeCompare(b.name));
+const iconDir = resolve(__dirname, "../../assets/icons"); // Путь к SVG
+const icons = readdirSync(iconDir)
+  .filter((file) => file.endsWith(".svg"))
+  .map((file) => ({
+    src: `/assets/icons/${file}`,
+    name: file.replace(/\.svg$/, ""), // Удаляем .svg из имени,
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 // Генерируем массив компонентов card для каждой иконки
-// const iconsPreview = icons.map((iconRaw) => ({
-//   ...card,
-//   cardClass: "w-60 h-full",
-//   cardActions: false,
-//   heading: {
-//     description: iconRaw.name,
-//   },
-//   picture: { ...picture.icon, path: `${iconRaw.src}`, w: "48 ", h: "60" },
-// }));
+const iconsPreview = icons.map((iconRaw) => ({
+  ...card,
+  cardClass: "w-60 h-full",
+  cardActions: false,
+  heading: {
+    description: iconRaw.name,
+  },
+  picture: { ...picture.icon, path: `${iconRaw.src}`, w: "48 ", h: "60" },
+}));
 
 const slideCards = [
   { title: "first", picture: { name: "name", ext: "ext" } },
@@ -39,14 +41,14 @@ const slideCards = [
 ];
 
 export const sectionsMap = {
-  // iconsPreview: {
-  //   ...baseSection,
-  //   template: "iconsPreview",
-  //   style,
-  //   heading: { ...heading, title: "Icons Preview" },
-  //   colClass: "col-span-12 flex flex-wrap gap-6",
-  //   components: [iconsPreview],
-  // },
+  iconsPreview: {
+    ...baseSection,
+    template: "iconsPreview",
+    style,
+    heading: { ...heading, title: "Icons Preview" },
+    colClass: "col-span-12 flex flex-wrap gap-6",
+    components: [iconsPreview],
+  },
   hero: {
     ...baseSection,
     template: "hero",

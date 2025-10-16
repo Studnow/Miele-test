@@ -3,7 +3,7 @@ export default {
     title: "Название страницы",
     description: "Описание страницы",
     theme: "mytheme", // тема по умолчанию
-    favicon: "/fire1.svg",
+    favicon: "/favicon.svg",
     ogImage: "/assets/img/og-image.jpg",
     ogUrl: "/",
   },

@@ -11,7 +11,7 @@ const policy = list;
 
 export default {
   template: "footer",
-  containerClass: "footer bg-primary text-center place-items-center text-base-100 p-10",
+  containerClass: "footer responsive-container bg-primary text-center place-items-center text-base-100 p-10",
   logo: { ...logo, containerClass: "link", text: "", icon: false },
   nav: {
     ...nav,
@@ -31,12 +31,8 @@ export default {
     class: "flex flex-col items-center",
     listClass: "flex flex-row justify-between items-center gap-2",
     listItems: [
-      { ...socialLink, icon: { ...socialLink.icon, id: "yt" } },
-      { ...socialLink, icon: { ...socialLink.icon, id: "vk" } },
       { ...socialLink, icon: { ...socialLink.icon, id: "instagram" } },
       { ...socialLink, icon: { ...socialLink.icon, id: "fb" } },
-      { ...socialLink, icon: { ...socialLink.icon, id: "tg" } },
-      { ...socialLink, icon: { ...socialLink.icon, id: "ok" } },
     ],
   },
   policy: {

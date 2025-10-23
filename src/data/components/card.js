@@ -4,7 +4,7 @@ import heading from "./heading.js"
 
 export const card = {
   type: "card",
-  cardClass: "bg-base-100",
+  cardClass: "w-full bg-base-100",
   cardFigureClass: "",
   cardBodyClass: "card-body h-full",
   cardPicture: true,

@@ -1,7 +1,7 @@
 export default {
   header: {
-    text: [{ phone: "+7 (727) 313 23 00", lang: "Қаз" }],
-    logo: { name: "hero_slider", ext: "png" },
+    text: { phone: "+7 (727) 313 23 00", lang: ["Қаз", "Қаз", "Қаз", "Қаз"] },
+    logo: { name: "logo", ext: "png" },
     icons: {
       start: [{ name: "burger_menu", ext: "png" }],
       center: {},
@@ -26,6 +26,7 @@ export default {
     },
     images: [
       {
+        title: "hero_slider",
         mobile: {
           name: "hero_slider-m",
           ext: "png",
@@ -36,6 +37,7 @@ export default {
         },
       },
       {
+        title: "hero_slider",
         mobile: {
           name: "vacuum_banner",
           ext: "png",
@@ -46,6 +48,7 @@ export default {
         },
       },
       {
+        title: "hero_slider",
         mobile: {
           name: "wash_banner",
           ext: "png",
@@ -56,6 +59,7 @@ export default {
         },
       },
       {
+        title: "hero_slider",
         mobile: {
           name: "kitchen_banner",
           ext: "png",

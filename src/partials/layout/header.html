@@ -5,7 +5,12 @@
         {{#if center.componentsToggle.showMenu}}
         {{>list start.menu}}
         {{/if}}
-        {{>logo}}
+        <select class="select w-full max-w-[64px] pe-1 ps-1">
+          <option disabled selected>{{start.select.[0]}}</option>
+          {{#each start.select}}
+          <option>{{this}}</option>
+          {{/each}}
+        </select>
       </div>
       <div class="navbar-center{{navbar.navbarCenter}}">
 
@@ -15,6 +20,7 @@
         {{#if center.componentsToggle.showContacts}}
         {{>list center.list}}
         {{/if}}
+        {{>logo center}}
       </div>
       <div class="navbar-end{{navbar.navbarEnd}}">
         <a class="{{right.class}}">{{right.text}}</a>

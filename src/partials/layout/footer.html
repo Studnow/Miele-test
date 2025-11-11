@@ -1,10 +1,14 @@
 <footer class="{{containerClass}}">
-  <aside class="flex gap-4">
+  {{>accordion accordion}}
+  <div class="flex flex-col w-full">
+    {{>list contacts}}
+    {{>list workingHours}}
     {{>list social}}
-  </aside>
-  {{>list nav}}
-  <div class="flex items-center">
-    {{>logo}}
-    {{>list policy}}
+  </div>
+  <div class="flex">
+    <div class="flex flex-col">
+      {{>list policy}}
+    </div>
+    {{>list payment}}
   </div>
 </footer>

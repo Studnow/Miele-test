@@ -5,7 +5,7 @@ export default {
   type: "link",
   textClass: "",
   url: "/!#",
-  text: "Посмотреть",
+  text: ["Посмотреть"],
   class: "link link-primary",
   icon: defaultIcon,
 };
@@ -13,7 +13,7 @@ export const socialLink = {
   type: "link",
   textClass: "",
   url: "/#!",
-  text: "",
+  text: [""],
   class: "btn btn-link",
   icon: socialIcon,
 };

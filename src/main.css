@@ -5,6 +5,7 @@
 @import url(./styles/daisui.css);
 /* @import url(./sass/mixins.sass); */
 @import url(./styles/splide.css);
+@import url(./styles/components.css);
 
 @tailwind base;
 @tailwind components;
@@ -84,11 +85,11 @@ body {
 
 @layer components {
   .section {
-    @apply relative w-full bg-neutral-300;
+    @apply relative w-full bg-black h-full;
   }
 
   .responsive-container {
-    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+    @apply container mx-auto px-4 sm:px-6 lg:px-4;
   }
 
   .section-title {

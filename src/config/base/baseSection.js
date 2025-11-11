@@ -1,12 +1,12 @@
 import heading from "../../data/components/heading.js";
-import style from "../defaultStyles/sectionStyle.js";
+import {sectionStyles} from "../defaultStyles/sectionStyle.js";
 import { card } from "../../data/components/card.js";
 import button from "../../data/components/button.js";
 
 export default {
   template: "section",
   fullWidth: false,
-  style,
+  style: sectionStyles.default,
   heading,
   colClass: "col-span-3",
   components: {
@@ -15,3 +15,5 @@ export default {
   },
   footer: false,
 };
+
+export const customSection = {}

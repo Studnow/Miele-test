@@ -35,6 +35,9 @@ export default defineConfig({
       },
       backgroundImage: {
         hero: "url('/assets/img/compressed/hero-bg.webp')",
+        bannerWash: "url('/assets/images/mobile/wash_banner.png')",
+        bannerVacuum: "url('/assets/images/mobile/vacuum_banner.png')",
+        bannerKitchen: "url('/assets/images/mobile/kitchen_banner.png')",
       },
       colors: {
         "link-active": "oklch(var(--link-active) / <alpha-value>)",

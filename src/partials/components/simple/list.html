@@ -5,7 +5,7 @@
   {{/if}}
   <{{listType}} class="{{listClass}}">
     {{>sublist listItems sub=sub actions=actions}}
-    </ul>
+    </{{listType}}>
 </div>
 
 {{else if (eq variant "menu")}}
@@ -21,24 +21,38 @@
 
 {{else if (eq variant "dropdown")}}
 <div class="dropdown {{dropdownClass}}">
-  <div tabindex="0" role="button" class="btn btn-secondary w-12 h-12 px-1 lg:hidden">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <div tabindex="0" role="button" class="{{dropdownBtnClass}}">
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-    </svg>
+    </svg> -->
+    {{>icon icon}}
   </div>
   <ul tabindex="0" class="dropdown-content z-[1] {{dropdownContent}}">
     {{>sublist listItems sub=sub actions=actions}}
   </ul>
 </div>
 
+{{else if (eq variant "text")}}
+
+<ul {{#if class}} class="{{listClass}}" {{/if}}>
+  {{#if sub}}
+  {{>sublist listItems sub=sub actions=actions}}
+  {{else}}
+  {{#each listItems}}
+  <li>{{text}}</li>
+  {{/each}}
+  {{/if}}
+</ul>
+
 {{else}}
-<nav {{#if class}} class="{{class}}" {{/if}}>
+<nav {{#if class}} class="{{listClass}}" {{/if}}>
   {{#if title}}
   <h3 class="footer-title text-h3-clamp">{{title}}</h3>
   {{/if}}
   {{#each listItems}}
   {{>link this}}
   {{/each}}
+  {{>link link}}
 </nav>
 
 {{/if}}

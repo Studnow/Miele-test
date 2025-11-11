@@ -6,8 +6,8 @@ export default {
   modal: false, // "onclick='my_modal_1.showModal()'",
   textClass: "",
   url: "/!#",
-  text: "Посмотреть",
+  text: "Подробнее",
   btnType: "button", // submit, reset, button
-  class: "btn-outline btn-primary",
+  class: "",
   icon,
 };

@@ -2,59 +2,123 @@ import logo from "../components/logo";
 import icon from "../components/icon";
 import link from "../components/link";
 import { socialLink } from "../components/link";
+import accordion from "../components/accordion.js";
+
+//data
+
+import pageData from "../../../assets/assetsData.js";
+
+const contactsData = pageData.footer.contacts;
+const socialData = pageData.footer.social;
+const workingHoursData = pageData.footer.workingHours;
+const accordionData = pageData.footer.accordion;
+const policyData = pageData.footer.copyright;
+
 //lists
 import list from "../components/list";
 
-const nav = list;
+const payment = list;
 const social = list;
 const policy = list;
+const contacts = list;
 
 export default {
   template: "footer",
-  containerClass: "footer responsive-container bg-primary text-center place-items-center text-base-100 p-10",
-  logo: { ...logo, containerClass: "link", text: "", icon: false },
-  nav: {
-    ...nav,
-    variant: "nav",
-    title: false,
-    class: "",
-    listItems: [
-      { ...link, class: "link no-underline hover:underline", text: "ИП Твердохлеб Е.В.", icon: false },
-      { ...link, class: "link no-underline hover:underline", text: "ИНН 920158336626", icon: false },
-      "ИНН 920158336626",
-    ],
+  containerClass:
+    "footer responsive-container bg-black text-base-100 text-center gap-0 p-10 divide-y md:divide-y-0 divide-base-300 [&>:first-child]:border-t md:[&>:first-child]:border-0",
+  // logo: { ...logo, containerClass: "link", text: "", icon: false },
+  accordion: {
+    ...accordion,
+    section: false,
+    title: true,
+    listItems: accordionData.map((item) => ({
+      title: item.title,
+      items: item.navLinks.map((link) => ({
+        ...link,
+        text: link,
+        class: "text-left",
+        textClass: "text-base-100",
+      })),
+      class: " bg-black collapse-arrow rounded-none lg:collapse-open",
+    })),
   },
   social: {
     ...social,
     variant: "list",
     title: false,
-    class: "flex flex-col items-center",
+    class: "mb-2",
     listClass: "flex flex-row justify-between items-center gap-2",
-    listItems: [
-      { ...socialLink, icon: { ...socialLink.icon, id: "instagram" } },
-      { ...socialLink, icon: { ...socialLink.icon, id: "fb" } },
-    ],
+    listItems: socialData.items.map((item) => ({
+      ...socialLink,
+      class: socialLink.class.concat(" w-12 h-12 px-0"),
+      text: false,
+      icon: item?.icon
+        ? { ...socialLink.icon, id: item.icon?.id, w: "32", h: "32", class: "bg-base-100 rounded-full" }
+        : false,
+    })),
+  },
+  workingHours: {
+    ...social,
+    variant: "text",
+    title: false,
+    class: "flex flex-col items-center",
+    listClass: "flex flex-col items-start gap-2",
+    listItems: workingHoursData.items[0].text.map((item) => ({ text: item })),
+  },
+  contacts: {
+    ...contacts,
+    variant: "list",
+    title: false,
+    class: "flex flex-col items-center",
+    listClass: "flex flex-col justify-between items-center gap-8 w-full",
+    listItems: contactsData.items.map((item) => ({
+      ...socialLink,
+      class: socialLink.class.concat(" flex flex-row-reverse w-full text-base-100 no-underline px-0 w-full"),
+      text: item.text,
+      textWrapper: "flex flex-col items-start gap-2 relative top-4",
+      textClass: "",
+      customTextClass: "text-xl",
+      url: item.phone ? `tel:${item.phone}` : "#",
+      icon: item?.icon ? { ...socialLink.icon, id: item.icon?.id } : false,
+    })),
   },
   policy: {
     ...policy,
     variant: "nav",
     title: false,
     class: "flex flex-col items-center",
-    listClass: "flex flex-row justify-between items-center gap-4",
+    listClass: "flex flex-col items-start gap-6",
+    listItems: policyData.items.map((item) => ({
+      ...link,
+      url: "/privacy-policy",
+      text: item.text,
+      textWrapper: "flex flex-col items-start relative top-4",
+      class: "link no-underline hover:underline text-left",
+      textClass: "text-left text-xs",
+      icon: false,
+    })),
+    link: {...link, text: policyData.link.text, url: "/privacy-policy", class: "link text-left text-xs", icon: false },
+  },
+  payment: {
+    ...payment,
+    variant: "",
+    title: false,
+    class: "flex flex-col items-center",
+    listClass: "flex flex-row justify-between items-center gap-2",
     listItems: [
       {
         ...link,
         url: "/privacy-policy",
-        text: "Политика конфиденциальности",
+        text: false,
         class: "link no-underline hover:underline mb-4",
-        icon: false,
+        icon: { ...icon, id: "payment_mc", class: "w-16 h-12" },
       },
       {
         ...link,
         url: "/copyright",
-        text: "Copyright (c) 2025",
+        text: false,
         class: "link no-underline hover:underline mb-4",
-        icon: false,
+        icon: { ...icon, id: "payment_visa", class: "w-16 h-12" },
       },
     ],
   },

@@ -1,6 +1,6 @@
 {{#if container}}
 
-<div class="mb-8 {{containerClass}}">
+<div class="{{containerClass}}">
   {{#if caption}}
   <p class="{{captionClass}}">{{captionText}}</p>
   {{/if}}
@@ -8,7 +8,7 @@
   <h{{titleLevel}} class="{{titleClass}}">{{title}}</h{{titleLevel}}>
   {{/if}}
   {{#if description}}
-  <p class="text-primary-content {{descriptionClass}}">{{description}}</p>
+  <p class="{{descriptionClass}}">{{description}}</p>
   {{/if}}
 </div>
 
@@ -21,7 +21,7 @@
 <h{{titleLevel}} class="{{titleClass}}">{{title}}</h{{titleLevel}}>
 {{/if}}
 {{#if description}}
-<p class="text-primary-content {{descriptionClass}}">{{description}}</p>
+<p class="{{descriptionClass}}">{{description}}</p>
 {{/if}}
 
 {{/if}}

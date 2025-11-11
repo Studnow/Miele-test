@@ -1,5 +1,13 @@
 <a href="{{url}}" class="{{class}}">
+  {{#if textWrapper}}
+  <div class="{{textWrapper}}">
+    {{#each text}}
+    <span class="{{../textClass}} {{#if @last}}{{../customTextClass}}{{/if}}">{{this}}</span>
+    {{/each}}
+  </div>
+  {{else if text}}
   <span class="{{textClass}}">{{text}}</span>
+  {{/if}}
   {{#if icon}}
   {{>icon icon}}
   {{/if}}

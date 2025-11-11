@@ -31,9 +31,9 @@
 }
 
 #main-slider .splide__pagination {
-  @apply bottom-[67.5%] lg:bottom-0 justify-between gap-6 hidden md:flex container mx-auto;
+  @apply container mx-auto bottom-6;
 }
-
+/* 
 #main-slider .splide__pagination {
   @apply bottom-[67.5%] lg:bottom-0 hidden md:flex container mx-auto gap-6 justify-between;
 
@@ -47,9 +47,9 @@
       min-width: max-content;
     }
   }
-}
+} */
 
-#main-slider .splide__pagination__page {
+/* #main-slider .splide__pagination__page {
   @apply relative !bg-transparent !w-auto !h-auto hover:!text-primary py-4;
   flex: 1 1 auto;
   min-width: 0;
@@ -57,7 +57,7 @@
   text-overflow: ellipsis;
 }
 
-/* Вариант 1: через vertical-align */
+// Вариант 1: через vertical-align
 #main-slider .splide__pagination__page::before {
   content: attr(data-number);
   vertical-align: super;
@@ -68,11 +68,11 @@
 #main-slider .splide__pagination__page::after {
   content: attr(data-text);
   color: inherit;
-}
+} */
 
 #main-slider .splide__pagination__page.is-active {
   /* background-color: transparent !important; */
-  @apply text-primary bg-transparent;
+  @apply bg-accent opacity-100;
 }
 
 .card .btn svg {

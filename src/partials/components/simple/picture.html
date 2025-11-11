@@ -2,6 +2,6 @@
   {{#if modern}}
   <source type="webp" srcset="/assets/img/compressed/{{name}}.webp" alt="{{alt}}" />
    {{/if}}
-  <img src="{{#if path}} {{path}} {{else}}/assets/img/compressed/{{name}}.{{ext}}{{/if}}" {{#if w}}width="{{w}}" {{/if}} {{#if h}}height="{{h}}" {{/if}}
-    alt="{{title}}" loading="lazy" />
+  <img class="{{imgClass}}" src="{{#if path}} {{path}} {{else}}/assets/img/compressed/{{name}}.{{ext}}{{/if}}" {{#if w}}width="{{w}}" {{/if}} {{#if h}}height="{{h}}" {{/if}}
+    alt="{{alt}}" loading="lazy" />
 </picture>

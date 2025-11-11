@@ -24,9 +24,10 @@ export default {
       name: "example_image",
       ext: "png",
     },
-    images: [
+    slides: [
       {
-        title: "hero_slider",
+        title: "Выгода до 7% на комплект техники!",
+        description: "Сегодня у вас есть возможность собрать комплект техники и получить эксклюзивную скидку до 7%!",
         mobile: {
           name: "hero_slider-m",
           ext: "png",
@@ -37,7 +38,8 @@ export default {
         },
       },
       {
-        title: "hero_slider",
+        title: "Выгода до 7% на комплект техники!",
+        description: "Сегодня у вас есть возможность собрать комплект техники и получить эксклюзивную скидку до 7%!",
         mobile: {
           name: "vacuum_banner",
           ext: "png",
@@ -48,7 +50,8 @@ export default {
         },
       },
       {
-        title: "hero_slider",
+        title: "Выгода до 7% на комплект техники!",
+        description: "Сегодня у вас есть возможность собрать комплект техники и получить эксклюзивную скидку до 7%!",
         mobile: {
           name: "wash_banner",
           ext: "png",
@@ -59,7 +62,32 @@ export default {
         },
       },
       {
-        title: "hero_slider",
+        title: "Выгода до 7% на комплект техники!",
+        description: "Сегодня у вас есть возможность собрать комплект техники и получить эксклюзивную скидку до 7%!",
+        mobile: {
+          name: "kitchen_banner",
+          ext: "png",
+        },
+        desktop: {
+          name: "kitchen_banner",
+          ext: "png",
+        },
+      },
+      {
+        title: "Выгода до 7% на комплект техники!",
+        description: "Сегодня у вас есть возможность собрать комплект техники и получить эксклюзивную скидку до 7%!",
+        mobile: {
+          name: "kitchen_banner",
+          ext: "png",
+        },
+        desktop: {
+          name: "kitchen_banner",
+          ext: "png",
+        },
+      },
+      {
+        title: "Выгода до 7% на комплект техники!",
+        description: "Сегодня у вас есть возможность собрать комплект техники и получить эксклюзивную скидку до 7%!",
         mobile: {
           name: "kitchen_banner",
           ext: "png",
@@ -73,10 +101,10 @@ export default {
   },
   advantages: {
     cards: [
-      { text: "Официальная гарантия на технику — 2 года", icon: { name: "adv_quality", ext: "svg" } },
-      { text: "Доставка по всему Казахстану", icon: { name: "adv_delivery", ext: "svg" } },
-      { text: "Установка и настройка техники", icon: { name: "adv_service", ext: "svg" } },
-      { text: "Удобная оплата и беспроцентное кредитование", icon: { name: "adv_diagram", ext: "svg" } },
+      { description: "Официальная гарантия на технику — 2 года", icon: { name: "adv_quality", ext: "svg", alt: "Качество" } },
+      { description: "Доставка по всему Казахстану", icon: { name: "adv_delivery", ext: "svg", alt: "Доставка" } },
+      { description: "Установка и настройка техники", icon: { name: "adv_service", ext: "svg", alt: "Сервис" } },
+      { description: "Удобная оплата и беспроцентное кредитование", icon: { name: "adv_diagram", ext: "svg", alt: "Оплата" } },
     ],
   },
   categories: {
@@ -84,24 +112,28 @@ export default {
     cards: {
       main: [
         {
-          text: "Техника по уходу за бельем",
+          title: "Техника по уходу за бельем",
+          alt: "Стиральные машины и сушилки Miele",
           imageD: { name: "wash_card", ext: "png" },
           imageM: { name: "wash_card", ext: "png" },
         },
         {
-          text: "Техника для кухни",
+          title: "Техника для кухни",
+          alt: "Кухонная техника Miele",
           imageD: { name: "kitchen_card", ext: "png" },
           imageM: { name: "kitchen_card", ext: "png" },
         },
         {
-          text: "Техника по уходу за домом",
+          title: "Техника по уходу за домом",
+          alt: "Техника для уборки Miele",
           imageD: { name: "vacuum_card", ext: "png" },
           imageM: { name: "vacuum_card", ext: "png" },
         },
         {
-          text: "Аксессуары и бытовая химия",
-          imageD: { name: "accesories_card", ext: "png" },
-          imageM: { name: "accesories_card", ext: "png" },
+          title: "Аксессуары и бытовая химия",
+          alt: "Аксессуары Miele",
+          imageD: { name: "accessories_card", ext: "png" },
+          imageM: { name: "accessories_card", ext: "png" },
         },
       ],
       hover: {
@@ -169,10 +201,10 @@ export default {
     ],
   },
   footer: {
-    text: [
+    accordion: [
       {
         title: "каталог",
-        catalog: [
+        navLinks: [
           "Техника по уходу за бельем",
           "Техника для кухни",
           "Техника по уходу за домом",
@@ -183,14 +215,14 @@ export default {
       },
       {
         title: "сервис",
-        service: [
+        navLinks: [
           "Удобная доставка",
           "Установка и настройка",
           "Ремонт и обслуживание",
           "Премиальные сервисные продукты",
         ],
       },
-      { title: "о компании", about: ["О компании Miele", "Новости", "Контакты", "Условия продажи"] },
+      { title: "о компании", navLinks: ["О компании Miele", "Новости", "Контакты", "Условия продажи"] },
     ],
     images: [
       {
@@ -199,21 +231,34 @@ export default {
       },
     ],
     contacts: {
-      text: [
-        { text: "позвонить", phone: "+7 (727) 313 23 00", icon: { name: "whatsapp", ext: "svg" } },
-        { text: "написать", phone: "+7 (701) 102 72 37", icon: { name: "phone", ext: "svg" } },
+      items: [
         {
-          list: ["Пн-Чт 9:00-18:00", "Пт 9:00-17:00", "Сб-Вс выходной"],
-          icons: [
-            { name: "instagram", ext: "svg" },
-            { name: "facebook", ext: "svg" },
-          ],
+          text: ["позвонить", "+7 (727) 313 23 00"],
+          phone: "+7 (727) 313 23 00",
+          icon: { id: "whatsapp", ext: "svg" },
+        },
+        { text: ["написать", "+7 (701) 102 72 37"], phone: "+7 (701) 102 72 37", icon: { id: "phone", ext: "svg" } },
+      ],
+    },
+    workingHours: {
+      items: [
+        {
+          text: ["Пн-Чт 9:00-18:00", "Пт 9:00-17:00", "Сб-Вс выходной"],
         },
       ],
     },
+    social: {
+      items: [{ icon: { id: "instagram", ext: "svg" } }, { icon: { id: "facebook", ext: "svg" } }],
+    },
     copyright: {
-      text: "© 2025 Miele. Все права защищены.",
-      link: "Политика обработки ПД",
+      items: [
+        {
+          text: ["© 2025 Miele.", "Все права защищены."],
+        },
+      ],
+      link: { text: "Политика обработки ПД" },
+    },
+    payment: {
       icons: [
         { name: "payment_mc", ext: "svg" },
         { name: "payment_visa", ext: "svg" },

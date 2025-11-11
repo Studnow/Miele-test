@@ -1,5 +1,6 @@
 // import listItems from "../../../assets/data.js";
 import link from "./link.js";
+import icon from "./icon.js";
 
 export default {
   type: "list",
@@ -11,6 +12,8 @@ export default {
   subListClass: "menu menu-horizontal p-2 bg-base-100 rounded-box z-[1] mt-3 w-full",
   dropdownClass: "dropdown-bottom",
   dropdownContent: "",
+  dropdownBtnClass: "btn btn-ghost text-base-100 lg:hidden",
+  icon,
   variant: "menu", // list, menu, dropdown, nav
   actions: false,
   listItems: [

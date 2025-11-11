@@ -16,10 +16,11 @@
       {{>grid}}
       {{/if}}
     </div>
-
+    {{#if divider}}
+    <div class="divider divider-secondary w-[100vw] -translate-x-4"></div>
+    {{/if}}
     {{#if footer}}
     <div class="section__footer {{style.sectionFooterClass}}">
-      {{>button}}
       {{{footer}}}
     </div>
     {{/if}}

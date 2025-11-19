@@ -1,11 +1,22 @@
 {{#if (eq variant "list")}}
 <div class="flex flex-col {{class}}">
-  {{#if title}}
-  <h3 {{#if class}} class="text-h3-clamp" {{/if}}>{{title}}</h3>
+  {{#if hoverLink}}
+  {{>link hoverLink}}
   {{/if}}
+  {{#if title}}
+  <h3 {{#if class}} class="text-h4-clamp" {{/if}}>{{title}}</h3>
+  {{/if}}
+  {{#if sub}}
   <{{listType}} class="{{listClass}}">
     {{>sublist listItems sub=sub actions=actions}}
-    </{{listType}}>
+  </{{listType}}>
+  {{else}}
+  <ul class="{{listClass}}">
+    {{#each listItems}}
+    <li>{{>link this}}</li>
+    {{/each}}
+  </ul>
+  {{/if}}
 </div>
 
 {{else if (eq variant "menu")}}

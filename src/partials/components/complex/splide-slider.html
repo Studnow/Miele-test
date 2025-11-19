@@ -1,12 +1,12 @@
 {{#if fullWidth}}
-<div class="relative px-4">
+<div class="relative px-4 pb-4">
   {{/if}}
-  <div id="{{id}}" class="splide">
+  <div id="{{id}}" class="splide pb-2">
     {{#if sliderParts.customControl.control}}
     {{>sliderParts/customControl controls}}
     {{/if}}
     <div class="splide__track">
-      <ul class="splide__list h-[100vh]">
+      <ul class="splide__list">
         {{#isArray slides.slideData}}
         {{#each slides.slideData}}
         {{!-- Можно переходить на уровень выше внутри #each, объект this = объекту вызванному в each --}}

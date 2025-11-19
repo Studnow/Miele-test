@@ -83,6 +83,10 @@ body {
   transform: translate(-50%, -50%) rotate(-25deg);
 }
 
+.footer>.collapse-arrow>.collapse-title::after {
+  @apply md:text-transparent;
+}
+
 @layer components {
   .section {
     @apply relative w-full bg-black h-full;
@@ -95,4 +99,10 @@ body {
   .section-title {
     @apply text-2xl font-bold mb-4;
   }
+
+  /* .card.image-full>figure picture {
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+  } */
 }

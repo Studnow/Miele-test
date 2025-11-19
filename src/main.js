@@ -6,7 +6,7 @@ import "@splidejs/splide/css";
 import Splide from "@splidejs/splide";
 
 const heroSlider = new Splide("#main-slider", {
-  arrows: false,
+  // arrows: false,
   // perPage: 2,
   pagination: true,
   // classes: {
@@ -16,6 +16,7 @@ const heroSlider = new Splide("#main-slider", {
   breakpoints: {
     1024: {
       perPage: 1,
+      arrows: true,
     },
   },
   gap: "2rem",

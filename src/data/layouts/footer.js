@@ -25,7 +25,7 @@ const contacts = list;
 export default {
   template: "footer",
   containerClass:
-    "footer responsive-container bg-black text-base-100 text-center gap-0 p-10 divide-y md:divide-y-0 divide-base-300 [&>:first-child]:border-t md:[&>:first-child]:border-0",
+    "footer responsive-container bg-base-300 text-base-100 text-center gap-0 p-10 divide-y md:divide-y-0 divide-base-300 [&>:first-child]:border-t md:[&>:first-child]:border-0 md:grid-flow-row md:grid-cols-2 lg:grid-cols-4 md:grid-rows-[auto_1fr] max-w-full",
   // logo: { ...logo, containerClass: "link", text: "", icon: false },
   accordion: {
     ...accordion,
@@ -39,7 +39,7 @@ export default {
         class: "text-left",
         textClass: "text-base-100",
       })),
-      class: " bg-black collapse-arrow rounded-none lg:collapse-open",
+      class: " bg-base-300 collapse-arrow rounded-none md:collapse-open",
     })),
   },
   social: {
@@ -87,7 +87,7 @@ export default {
     variant: "nav",
     title: false,
     class: "flex flex-col items-center",
-    listClass: "flex flex-col items-start gap-6",
+    listClass: "flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between",
     listItems: policyData.items.map((item) => ({
       ...link,
       url: "/privacy-policy",
@@ -97,14 +97,20 @@ export default {
       textClass: "text-left text-xs",
       icon: false,
     })),
-    link: {...link, text: policyData.link.text, url: "/privacy-policy", class: "link text-left text-xs", icon: false },
+    link: {
+      ...link,
+      text: policyData.link.text,
+      url: "/privacy-policy",
+      class: "link text-left text-xs no-underline border-0 border-b-2 border-base-200",
+      icon: false,
+    },
   },
   payment: {
     ...payment,
     variant: "",
     title: false,
     class: "flex flex-col items-center",
-    listClass: "flex flex-row justify-between items-center gap-2",
+    listClass: "flex flex-row items-center gap-2 w-2/5 justify-end",
     listItems: [
       {
         ...link,

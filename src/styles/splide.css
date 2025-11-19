@@ -7,7 +7,7 @@
 }
 
 .splide__arrow svg {
-  @apply md:!w-10 md:!h-10;
+  @apply md:!w-10 md:!h-10 !fill-base-100;
 }
 
 /* .splide__arrow--prev {
@@ -18,8 +18,8 @@
 } */
 
 #main-slider .splide__arrow {
-  @apply !rounded-none !bg-transparent top-full md:!top-[26%] lg:!top-[50%] 2xl:!top-1/2;
-  border: 1px solid oklch(var(--s)) !important;
+  @apply hidden lg:flex !rounded-full !bg-black/60 !text-base-100 top-full md:!top-[26%] lg:!top-[50%] 2xl:!top-1/2;
+  /* border: 1px solid oklch(var(--s)) !important; */
 }
 
 #main-slider .splide__arrow--prev {
@@ -31,7 +31,7 @@
 }
 
 #main-slider .splide__pagination {
-  @apply container mx-auto bottom-6;
+  @apply container mx-auto bottom-0;
 }
 /* 
 #main-slider .splide__pagination {

@@ -1,6 +1,6 @@
 export default {
   containerClass:
-    "btn btn-link no-underline text-base flex justify-start items-center w-12 px-0 md:w-full lg:px-2",
+    "btn btn-link no-underline text-base flex justify-start items-center w-12 px-0 lg:px-2",
   img: { name: "logo", ext: "png" },
   imgClass: "",
   text: "Miele logo",

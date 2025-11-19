@@ -1,3 +1,99 @@
 /* footer .collapse-arrow > .collapse-title::after {
   top: 1.7rem;
 } */
+
+/* .card.image-full>figure picture {
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+} */
+
+@media (min-width: 1024px) {
+  .lg\:image-full {
+    display: grid !important;
+    /* Принудительно grid */
+  }
+
+  .lg\:image-full::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/assets/images/desktop/hero_slider.png");
+    /* Static src; для dynamic — JS */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.75;
+    z-index: 1;
+  }
+
+  .lg\:image-full>* {
+    grid-column-start: 1 !important;
+    grid-row-start: 1 !important;
+    position: relative;
+  }
+
+  .lg\:image-full figure {
+    z-index: 0;
+    /* Фон под body */
+  }
+
+  .lg\:image-full .card-body {
+    z-index: 10;
+    /* Контент сверху */
+    background: rgba(0, 0, 0, 0.5);
+    /* Доп. оверлей если нужно */
+  }
+}
+
+.menu>li:hover {
+  background-color: transparent;
+}
+
+.card .card-list {
+  visibility: hidden;
+  height: 0%;
+}
+
+.card:hover .card-list {
+  visibility: visible;
+  /* background-color: var(--p);
+  transition: all;
+  transform: ease-in;
+  transition-duration: 300ms; */
+}
+
+.card:hover .card-body {
+  width: 100%;
+  /* height: inherit; */
+  max-height: 100%;
+  transition: all;
+  transform: ease-in;
+  transition-duration: 500ms;
+}
+
+.section-categories .card:hover .card-heading {
+  visibility: hidden;
+}
+
+/* .hover-list {
+  @apply translate-y-full group-hover:translate-y-0;
+} */
+
+.hover-list li {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  /* text-wrap: ellipsis; */
+  min-height: 1.65rem;
+  /* transition: all;
+  transform: ease-in;
+  transition-duration: 200ms; */
+}
+
+.hover-list li::marker {
+  content: "";
+}
+
+.hover-list li:hover::marker {
+  content: url('/assets/icons/subcategory_marker.svg');
+}

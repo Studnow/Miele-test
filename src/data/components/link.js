@@ -6,7 +6,7 @@ export default {
   textClass: "",
   url: "/!#",
   text: ["Посмотреть"],
-  class: "link link-primary",
+  class: " link",
   icon: defaultIcon,
 };
 export const socialLink = {
@@ -14,6 +14,6 @@ export const socialLink = {
   textClass: "",
   url: "/#!",
   text: [""],
-  class: "btn btn-link",
+  class: " btn btn-link",
   icon: socialIcon,
 };

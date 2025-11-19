@@ -4,11 +4,11 @@ import icon from "./icon.js";
 
 export default {
   type: "list",
-  title: "false",
+  title: false,
   listType: "ul",
-  class: "w-full bg-neutral-200",
+  class: "w-full",
   listClass:
-    "menu menu-horizontal hidden lg:flex space-x-2 p-2 bg-base-100 rounded-box z-[1] mt-3 w-full " /* for no menu lists list-image-[url('/assets/icons/vite.svg')]; */,
+    "menu hidden lg:flex rounded-box z-[1] mt-3 w-full " /* for no menu lists list-image-[url('/assets/icons/vite.svg')]; */,
   subListClass: "menu menu-horizontal p-2 bg-base-100 rounded-box z-[1] mt-3 w-full",
   dropdownClass: "dropdown-bottom",
   dropdownContent: "",

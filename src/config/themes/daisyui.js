@@ -6,6 +6,7 @@ export default {
     neutral: "#D1D8DB", // colors for active and hover menu
     "neutral-content": "oklch(0.96 0 0 / 1)",
     "base-100": "#FFFFFF",
+    "base-300": "#3B3B3B",
     info: "#A8E2F0",
     success: "#15847B",
     warning: "#E78B13",

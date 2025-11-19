@@ -30,14 +30,17 @@ export default defineConfig({
         "h2-clamp": ["clamp(1.5rem, 1.167rem + 1.481vw, 2.5rem)", "100%"],
         "h3-clamp": ["clamp(1.25rem, 1.083rem + 0.741vw, 1.75rem)", "100%"],
         lead: ["38px", "52px"], // 48px 84
-        body: ["clamp(1rem, 0.958rem + 0.185vw, 1.125rem)", "130%"], // 36px 80 min 16/130 max 18/130
+        body: ["clamp(1rem, 0.958rem + 0.185vw, 1rem)", "130%"], // 36px 80 min 16/130 max 18/130
         caption: ["clamp(.75rem, 0.958rem + 0.185vw, 1.125rem)", "100%"],
       },
       backgroundImage: {
         hero: "url('/assets/img/compressed/hero-bg.webp')",
-        bannerWash: "url('/assets/images/mobile/wash_banner.png')",
-        bannerVacuum: "url('/assets/images/mobile/vacuum_banner.png')",
-        bannerKitchen: "url('/assets/images/mobile/kitchen_banner.png')",
+        bannerWashM: "url('/assets/images/mobile/wash_banner.png')",
+        bannerVacuumM: "url('/assets/images/mobile/vacuum_banner.png')",
+        bannerKitchenM: "url('/assets/images/mobile/kitchen_banner.png')",
+        bannerWashD: "url('/assets/images/desktop/wash_banner.png')",
+        bannerVacuumD: "url('/assets/images/desktop/vacuum_banner.png')",
+        bannerKitchenD: "url('/assets/images/desktop/kitchen_banner.png')",
       },
       colors: {
         "link-active": "oklch(var(--link-active) / <alpha-value>)",

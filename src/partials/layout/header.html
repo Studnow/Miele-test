@@ -2,10 +2,11 @@
   <div class="container{{navbar.containerClass}}">
     <div class="navbar{{navbar.navbarClass}}">
       <div class="navbar-start{{navbar.navbarStart}}">
-        {{#if center.componentsToggle.showMenu}}
+        {{#if start.componentsToggle.showMenu}}
         {{>list start.menu}}
         {{/if}}
-        <select class="select w-full max-w-[64px] pe-1 ps-1 rounded-none bg-black text-base-100">
+        {{>link start.phone}}
+        <select class="select lg:hidden w-full max-w-[64px] pe-1 ps-1 rounded-none bg-black text-base-100">
           <option disabled selected>{{start.select.[0]}}</option>
           {{#each start.select}}
           <option>{{this}}</option>
@@ -27,6 +28,12 @@
         {{#if right.drawer}}
         {{>drawerBtn right.drawerBtn}}
         {{/if}}
+        <select class="select hidden lg:inline-flex w-full max-w-[64px] pe-1 ps-1 rounded-none bg-black text-base-100">
+          <option disabled selected>{{start.select.[0]}}</option>
+          {{#each start.select}}
+          <option>{{this}}</option>
+          {{/each}}
+        </select>
         {{#each right.buttons}}
         {{>button}}
         {{/each}}

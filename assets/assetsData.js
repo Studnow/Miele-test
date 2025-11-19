@@ -8,10 +8,11 @@ export default {
       end: [
         { name: "search", ext: "svg" },
         { name: "bar", ext: "svg" },
-        { name: "favorites", ext: "svg" },
+        { name: "heart", ext: "svg" },
         { name: "cart", ext: "svg" },
       ],
     },
+    phone: "+7 (727) 313 23 00",
   },
   hero: {
     title: "Выгода до 7% на комплект техники!",
@@ -101,10 +102,16 @@ export default {
   },
   advantages: {
     cards: [
-      { description: "Официальная гарантия на технику — 2 года", icon: { name: "adv_quality", ext: "svg", alt: "Качество" } },
+      {
+        description: "Официальная гарантия на технику — 2 года",
+        icon: { name: "adv_quality", ext: "svg", alt: "Качество" },
+      },
       { description: "Доставка по всему Казахстану", icon: { name: "adv_delivery", ext: "svg", alt: "Доставка" } },
       { description: "Установка и настройка техники", icon: { name: "adv_service", ext: "svg", alt: "Сервис" } },
-      { description: "Удобная оплата и беспроцентное кредитование", icon: { name: "adv_diagram", ext: "svg", alt: "Оплата" } },
+      {
+        description: "Удобная оплата и беспроцентное кредитование",
+        icon: { name: "adv_diagram", ext: "svg", alt: "Оплата" },
+      },
     ],
   },
   categories: {
@@ -173,6 +180,10 @@ export default {
       "Создавайте безупречную чистоту в доме без усилий. Пылесосы и устройства Miele сочетают мощность, комфорт и немецкое качество в каждой детали.",
     captionBottom: "Всё для вашего дома",
     images: [
+      {
+        name: "vacuum_banner-m",
+        ext: "png",
+      },
       {
         name: "vacuum_banner",
         ext: "png",

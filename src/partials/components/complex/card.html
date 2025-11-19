@@ -1,19 +1,33 @@
 <div class="card {{cardClass}}">
+  
   {{#if cardPicture}}
   <figure class="{{cardFigureClass}}">
     {{>picture picture}}
   </figure>
   {{/if}}
   <div class="{{cardBodyClass}}">
-    {{#if heading.title}}
-    <h3 class="{{heading.titleClass}}">{{heading.title}}</h3>
+    {{#if hover}}
+    {{>list hover}}
     {{/if}}
-    {{#if heading.description}}
-    <p class="{{heading.descriptionClass}}">{{heading.description}}</p>
+    {{#if heading.container}}
+    <div class="card-heading {{heading.containerClass}}">
+      {{/if}}
+      {{#if heading.title}}
+      <h3 class="{{heading.titleClass}}">{{heading.title}}</h3>
+      {{/if}}
+      {{#if heading.description}}
+      <span class="{{heading.descriptionClass}}">{{heading.description}}</span>
+      {{/if}}
+    {{#if heading.container}}
+    </div>
     {{/if}}
     {{#if cardActions}}
     <div class="card-actions {{cardBtn.cardActionsClass}}">
+      {{#if button}}
       {{>button button}}
+      {{else}}
+      {{>link link}}
+      {{/if}}
     </div>
     {{/if}}
   </div>

@@ -73,7 +73,7 @@ export default defineConfig({
     // emit manifest so PHP can find the hashed files
     manifest: true,
     // outDir: "Vite3UI",
-    outDir: "dist",
+    outDir: "Miele",
     emptyOutDir: true,
     // ssr: false,
     // don't base64 images

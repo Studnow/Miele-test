@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="mytheme">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" /> -->
+
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание страницы" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="Описание страницы" />
+  <meta property="og:image" content="/assets/img/og-image.jpg" />
+  <meta property="og:url" content="/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>Название страницы</title>
+  
+  <link rel="stylesheet" crossorigin href="./assets/index.css">
+</head>
+
+<body class="">
+  <div class="drawer">
+    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content">
+      <!-- Page content here -->
+      <!-- <label for="my-drawer" class="btn btn-primary drawer-button">Open drawer</label> -->
+      <div id="app" class="app">
+        <dialog id="my_modal_1" class="modal">
+          <div class="modal-box">
+            
+            <div class="">
+              <h3 class="">Hello modalk</h3>
+              <p class="">Press ESC or button to close this window</p>
+            </div>
+            
+            <p>modal component</p>
+            <div class="modal-body">
+              <form id="feedback"  
+                class="col-span-12 gap-4 flex flex-col md:flex-row lg:w-[55%] mb-4 flex-wrap">
+                <div class="form-control ">
+                  <label for="name" class="label">
+                    <span class="label-text">Имя</span>
+                  </label>
+                  <input id="name" name="name" type="text" class="input input-bordered w-full" placeholder="Имя" />
+                </div>
+              
+                <div class="form-control ">
+                  <label for="phone" class="label">
+                    <span class="label-text">Имя</span>
+                  </label>
+                  <input id="phone" name="phone" type="text" class="input input-bordered w-full"
+                    placeholder="Номер телефона" />
+                </div>
+              
+              
+              
+              
+              
+              
+                <div class="form-control ">
+                  <label class="label cursor-pointer">
+                    <span class="label-text">Запомнить меня</span>
+                    <input type="checkbox" class="toggle" checked="checked" />
+                  </label>
+                </div>
+              
+              
+                <button type="button"  class="btn">
+                  <span class="">Подробнее</span>
+                  <svg class="" width="28" height="24" viewBox="0 0 40 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./assets/images/spritemap.svg#sprite-arrow"></use>
+                  </svg></button></form>    </div>
+            <div class="modal-action">
+              <button onclick="my_modal_1.close()" class="btn btn-primary">Close no form</button>
+            </div>
+          </div>
+        </dialog>      <header class="header bg-black">
+          <div class="container mx-auto max-w-full">
+            <div class="navbar bg-transparent gap-1 py-0 lg:px-8 min-h-fit responsive-container max-w-full">
+              <div class="navbar-start w-1/3 lg:w-1/3 gap-1 justify-start h-max">
+                <div class="dropdown lg:block">
+                  <div tabindex="0" role="button" class="bg-black text-base-100">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg> -->
+                    <svg class="h-12 w-12" width="28" height="24" viewBox="0 0 40 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./assets/images/spritemap.svg#sprite-burgerMenu"></use>
+                    </svg>  </div>
+                  <ul tabindex="0" class="dropdown-content z-[1] menu w-80 bg-base-100 rounded-sm">
+                    <li><a href="/!#" class="link no-underline text-primary hover:underline">
+                      <span class="">Не смотреть</span>
+                      </a></li>
+                    <li><a href="/!#" class="link no-underline text-primary hover:underline">
+                      <span class="">Посмотреть</span>
+                      </a></li>
+                    <li><a href="/!#" class="link no-underline text-primary hover:underline">
+                      <span class="">Не смотреть</span>
+                      </a></li>
+                    <li><a href="/!#" class=" link">
+                      <span class="">Пыщь пыщь пыщь</span>
+                      </a></li>
+                    <li><a href="/!#" class=" link">
+                      <span class="">тыщь тыщь тыщь</span>
+                      </a></li>
+                    <li><a href="/!#" class=" link">
+                      <span class="">Пыщь пыщь пыщь</span>
+                      </a></li>
+                    <li><a href="" class="">
+                    </a></li>
+                    <li><a href="" class="">
+                    </a></li>
+                  </ul>
+                </div>
+                
+                <a href="/!#" class="text-base-100 hidden lg:flex hover:underline">
+                  <span class="">+7 (727) 313 23 00</span>
+                  </a>        <select class="select lg:hidden w-full max-w-[64px] pe-1 ps-1 rounded-none bg-black text-base-100">
+                  <option disabled selected>Қаз</option>
+                  <option>Қаз</option>
+                  <option>Қаз</option>
+                  <option>Қаз</option>
+                  <option>Қаз</option>
+                </select>
+              </div>
+              <div class="navbar-center flex w-1/3 justify-center h-max">
+        
+                <a class="btn btn-link no-underline text-base flex justify-start items-center w-12 px-0 lg:px-2 w-32 lg:justify-center"><img class="" src="./assets/images/logo.png" alt="Miele logo" w="48"
+                                h="48"><span class="sr-only">Miele logo</span>
+                </a>      </div>
+              <div class="navbar-end w-1/3 lg:w-1/3 justify-end gap-1 h-max">
+                <!-- <a class="btn btn-outline max-w-24 bg-base-100 text-xs md:text-base text-accent border-2 hover:bg-accent hover:border-accent">Заказать звонок</a> -->
+                <select class="select hidden lg:inline-flex w-full max-w-[64px] pe-1 ps-1 rounded-none bg-black text-base-100">
+                  <option disabled selected>Қаз</option>
+                  <option>Қаз</option>
+                  <option>Қаз</option>
+                  <option>Қаз</option>
+                  <option>Қаз</option>
+                </select>
+                <button type="button"  class="btn bg-black hover:bg-primary border-none text-base-100 inline-flex items-center px-0 inline-flex">
+                  
+                  <svg class="w-12 h-12 overflow-visible align-middle" width="24" height="24" viewBox="0 0 40 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./assets/images/spritemap.svg#sprite-search"></use>
+                  </svg></button>        <button type="button"  class="btn bg-black hover:bg-primary border-none text-base-100 inline-flex items-center px-0 hidden lg:inline-flex">
+                  
+                  <svg class="w-12 h-12 overflow-visible align-middle" width="24" height="24" viewBox="0 0 40 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./assets/images/spritemap.svg#sprite-bar"></use>
+                  </svg></button>        <button type="button"  class="btn bg-black hover:bg-primary border-none text-base-100 inline-flex items-center px-0 hidden lg:inline-flex">
+                  
+                  <svg class="w-12 h-12 overflow-visible align-middle" width="24" height="24" viewBox="0 0 40 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./assets/images/spritemap.svg#sprite-heart"></use>
+                  </svg></button>        <button type="button"  class="btn bg-black hover:bg-primary border-none text-base-100 inline-flex items-center px-0 inline-flex">
+                  
+                  <svg class="w-12 h-12 overflow-visible align-middle" width="24" height="24" viewBox="0 0 40 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./assets/images/spritemap.svg#sprite-cart"></use>
+                  </svg></button>      </div>
+            </div>
+          </div>
+        </header>      <main class="main mb-4 w-full">
+          <section class="section section-hero flex flex-col items-center justify-center responsive-container max-w-full overflow-hidden mb-14 bg-black">
+            <div class="w-full mx-auto">
+          
+              <div class="section__content w-full">
+                <div class="relative px-4 pb-4">
+                  <div id="main-slider" class="splide pb-2">
+                    <div class="splide__track">
+                      <ul class="splide__list">
+                        <li class="splide__slide">
+                          <div class="card rounded-none w-full lg:image-full text-center items-center lg:items-start lg:justify-center">
+                            
+                            <figure class="w-full rounded-none">
+                              <picture class="rounded-none mb-6">
+                                <source type="webp" srcset="./assets/images/hero_slider-m.png" alt="Раковина из бетона" />
+                                <img class="w-full h-auto" src="./assets/images/hero_slider.png" width="786"  height="452"  alt="Раковина из бетона" loading="lazy" />
+                              </picture>  </figure>
+                            <div class="card-body space-y-5 mb-5 p-3 lg:p-8 md:mb-[121px] lg:mb-6 items-center lg:justify-start h-full">
+                              <div class="card-heading max-w-full lg:max-w-screen-sm lg:mb-6">
+                                <h3 class="text-h2-clamp mb-2 lg:mb-8 text-base-100">Выгода до 7% на комплект техники!</h3>
+                                <span class="text-subtitle text-neutral font-bold md:w-2/3 flex-grow-0">Сегодня у вас есть возможность собрать комплект техники и получить эксклюзивную скидку до 7%!</span>
+                              </div>
+                              <div class="card-actions ">
+                                <button type="button"  class="btn btn-accent rounded-full">
+                                  <span class="">Подробнее</span>
+                                </button>    </div>
+                            </div>
+                          </div>        </li>        <li class="splide__slide">
+                          <div class="card rounded-none w-full lg:image-full text-center items-center lg:items-start lg:justify-center">
+                            
+                            <figure class="w-full rounded-none">
+                              <picture class="rounded-none mb-6">
+                                <source type="webp" srcset="./assets/images/vacuum_banner.png" alt="Раковина из бетона" />
+                                <img class="w-full h-auto" src="./assets/images/vacuum_banner.png" width="786"  height="452"  alt="Раковина из бетона" loading="lazy" />
+                              </picture>  </figure>
+                            <div class="card-body space-y-5 mb-5 p-3 lg:p-8 md:mb-[121px] lg:mb-6 items-center lg:justify-start h-full">
+                              <div class="card-heading max-w-full lg:max-w-screen-sm lg:mb-6">
+                                <h3 class="text-h2-clamp mb-2 lg:mb-8 text-base-100">Выгода до 7% на комплект техники!</h3>
+                                <span class="text-subtitle text-neutral font-bold md:w-2/3 flex-grow-0">Сегодня у вас есть возможность собрать комплект техники и получить эксклюзивную скидку до 7%!</span>
+                              </div>
+                              <div class="card-actions ">
+                                <button type="button"  class="btn btn-accent rounded-full">
+                                  <span class="">Подробнее</span>
+                                </button>    </div>
+                            </div>
+                          </div>        </li>        <li class="splide__slide">
+                          <div class="card rounded-none w-full lg:image-full text-center items-center lg:items-start lg:justify-center">
+                            
+                            <figure class="w-full rounded-none">
+                              <picture class="rounded-none mb-6">
+                                <source type="webp" srcset="./assets/images/wash_banner.png" alt="Раковина из бетона" />
+                                <img class="w-full h-auto" src="./assets/images/wash_banner2.png" width="786"  height="452"  alt="Раковина из бетона" loading="lazy" />
+                              </picture>  </figure>
+                            <div class="card-body space-y-5 mb-5 p-3 lg:p-8 md:mb-[121px] lg:mb-6 items-center lg:justify-start h-full">
+                              <div class="card-heading max-w-full lg:max-w-screen-sm lg:mb-6">
+                                <h3 class="text-h2-clamp mb-2 lg:mb-8 text-base-100">Выгода до 7% на комплект техники!</h3>
+                                <span class="text-subtitle text-neutral font-bold md:w-2/3 flex-grow-0">Сегодня у вас есть возможность собрать комплект техники и получить эксклюзивную скидку до 7%!</span>
+                              </div>
+                              <div class="card-actions ">
+                                <button type="button"  class="btn btn-accent rounded-full">
+                                  <span class="">Подробнее</span>
+                                </button>    </div>
+                            </div>
+                          </div>        </li>        <li class="splide__slide">
+                          <div class="card rounded-none w-full lg:image-full text-center items-center lg:items-start lg:justify-center">
+                            
+                            <figure class="w-full rounded-none">
+                              <picture class="rounded-none mb-6">
+                                <source type="webp" srcset="./assets/images/kitchen_banner.png" alt="Раковина из бетона" />
+                                <img class="w-full h-auto" src="./assets/images/kitchen_banner2.png" width="786"  height="452"  alt="Раковина из бетона" loading="lazy" />
+                              </picture>  </figure>
+                            <div class="card-body space-y-5 mb-5 p-3 lg:p-8 md:mb-[121px] lg:mb-6 items-center lg:justify-start h-full">
+                              <div class="card-heading max-w-full lg:max-w-screen-sm lg:mb-6">
+                                <h3 class="text-h2-clamp mb-2 lg:mb-8 text-base-100">Выгода до 7% на комплект техники!</h3>
+                                <span class="text-subtitle text-neutral font-bold md:w-2/3 flex-grow-0">Сегодня у вас есть возможность собрать комплект техники и получить эксклюзивную скидку до 7%!</span>
+                              </div>
+                              <div class="card-actions ">
+                                <button type="button"  class="btn btn-accent rounded-full">
+                                  <span class="">Подробнее</span>
+                                </button>    </div>
+                            </div>
+                          </div>        </li>        <li class="splide__slide">
+                          <div class="card rounded-none w-full lg:image-full text-center items-center lg:items-start lg:justify-center">
+                            
+                            <figure class="w-full rounded-none">
+                              <picture class="rounded-none mb-6">
+                                <source type="webp" srcset="./assets/images/kitchen_banner.png" alt="Раковина из бетона" />
+                                <img class="w-full h-auto" src="./assets/images/kitchen_banner2.png" width="786"  height="452"  alt="Раковина из бетона" loading="lazy" />
+                              </picture>  </figure>
+                            <div class="card-body space-y-5 mb-5 p-3 lg:p-8 md:mb-[121px] lg:mb-6 items-center lg:justify-start h-full">
+                              <div class="card-heading max-w-full lg:max-w-screen-sm lg:mb-6">
+                                <h3 class="text-h2-clamp mb-2 lg:mb-8 text-base-100">Выгода до 7% на комплект техники!</h3>
+                                <span class="text-subtitle text-neutral font-bold md:w-2/3 flex-grow-0">Сегодня у вас есть возможность собрать комплект техники и получить эксклюзивную скидку до 7%!</span>
+                              </div>
+                              <div class="card-actions ">
+                                <button type="button"  class="btn btn-accent rounded-full">
+                                  <span class="">Подробнее</span>
+                                </button>    </div>
+                            </div>
+                          </div>        </li>        <li class="splide__slide">
+                          <div class="card rounded-none w-full lg:image-full text-center items-center lg:items-start lg:justify-center">
+                            
+                            <figure class="w-full rounded-none">
+                              <picture class="rounded-none mb-6">
+                                <source type="webp" srcset="./assets/images/kitchen_banner.png" alt="Раковина из бетона" />
+                                <img class="w-full h-auto" src="./assets/images/kitchen_banner2.png" width="786"  height="452"  alt="Раковина из бетона" loading="lazy" />
+                              </picture>  </figure>
+                            <div class="card-body space-y-5 mb-5 p-3 lg:p-8 md:mb-[121px] lg:mb-6 items-center lg:justify-start h-full">
+                              <div class="card-heading max-w-full lg:max-w-screen-sm lg:mb-6">
+                                <h3 class="text-h2-clamp mb-2 lg:mb-8 text-base-100">Выгода до 7% на комплект техники!</h3>
+                                <span class="text-subtitle text-neutral font-bold md:w-2/3 flex-grow-0">Сегодня у вас есть возможность собрать комплект техники и получить эксклюзивную скидку до 7%!</span>
+                              </div>
+                              <div class="card-actions ">
+                                <button type="button"  class="btn btn-accent rounded-full">
+                                  <span class="">Подробнее</span>
+                                </button>    </div>
+                            </div>
+                          </div>        </li>      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </section>  <section class="section section-cards flex flex-col items-center responsive-container overflow-hidden bg-base-100 mb-14">
+              
+              <div class="mb-4">
+              </div>
+              
+          
+              <div class="section__content grid grid-cols-2 md:grid-cols-12 gap-4 place-items-center py-4">
+                <div class="card w-full bg-base-100 h-full py-2 px-3 rounded-none border border-neutral/70 md:col-span-3 lg:card-side items-center hover:bg-base-200 transition-all">
+                  
+                  <figure class=" min-h-10">
+                    <picture class="rounded-none h-8 lg:h-10 lg:w-10">
+                      <img class="h-8 lg:h-10 lg:w-10" src="./assets/images/adv_quality.svg" width="32"  height="32"  alt="Качество" loading="lazy" />
+                    </picture>  </figure>
+                  <div class="card-body h-full p-0 lg:pl-3 lg:pr-0 items-center lg:justify-center">
+                    <div class="card-heading mb-4">
+                      <span class="text-sm lg:text-body h-fit">Официальная гарантия на технику — 2 года</span>
+                    </div>
+                  </div>
+                </div><div class="card w-full bg-base-100 h-full py-2 px-3 rounded-none border border-neutral/70 md:col-span-3 lg:card-side items-center hover:bg-base-200 transition-all">
+                  
+                  <figure class=" min-h-10">
+                    <picture class="rounded-none h-8 lg:h-10 lg:w-10">
+                      <img class="h-8 lg:h-10 lg:w-10" src="./assets/images/adv_delivery.svg" width="32"  height="32"  alt="Доставка" loading="lazy" />
+                    </picture>  </figure>
+                  <div class="card-body h-full p-0 lg:pl-3 lg:pr-0 items-center lg:justify-center">
+                    <div class="card-heading mb-4">
+                      <span class="text-sm lg:text-body h-fit">Доставка по всему Казахстану</span>
+                    </div>
+                  </div>
+                </div><div class="card w-full bg-base-100 h-full py-2 px-3 rounded-none border border-neutral/70 md:col-span-3 lg:card-side items-center hover:bg-base-200 transition-all">
+                  
+                  <figure class=" min-h-10">
+                    <picture class="rounded-none h-8 lg:h-10 lg:w-10">
+                      <img class="h-8 lg:h-10 lg:w-10" src="./assets/images/adv_service.svg" width="32"  height="32"  alt="Сервис" loading="lazy" />
+                    </picture>  </figure>
+                  <div class="card-body h-full p-0 lg:pl-3 lg:pr-0 items-center lg:justify-center">
+                    <div class="card-heading mb-4">
+                      <span class="text-sm lg:text-body h-fit">Установка и настройка техники</span>
+                    </div>
+                  </div>
+                </div><div class="card w-full bg-base-100 h-full py-2 px-3 rounded-none border border-neutral/70 md:col-span-3 lg:card-side items-center hover:bg-base-200 transition-all">
+                  
+                  <figure class=" min-h-10">
+                    <picture class="rounded-none h-8 lg:h-10 lg:w-10">
+                      <img class="h-8 lg:h-10 lg:w-10" src="./assets/images/adv_diagram.svg" width="32"  height="32"  alt="Оплата" loading="lazy" />
+                    </picture>  </figure>
+                  <div class="card-body h-full p-0 lg:pl-3 lg:pr-0 items-center lg:justify-center">
+                    <div class="card-heading mb-4">
+                      <span class="text-sm lg:text-body h-fit">Удобная оплата и беспроцентное кредитование</span>
+                    </div>
+                  </div>
+                </div>    </div>
+          
+          </section>  <section class="section section-categories flex flex-col items-center responsive-container overflow-hidden bg-base-100 mb-14">
+              
+              <div class="mb-4">
+                <h2 class="text-h2-clamp text-center">Откройте для себя ассортимент Miele</h2>
+              </div>
+              
+          
+              <div class="section__content grid grid-cols-2 md:grid-cols-12 place-items-center py-4 gap-y-9 gap-x-3">
+                <div class="card w-full bg-base-100 group w-full h-full py-0 rounded-none md:col-span-3 items-center max-w-72 overflow-y-hidden transition-all duration-300 ease-in">
+                  
+                  <figure class=" w-full h-40 lg:h-full">
+                    <picture class="rounded-none">
+                      <img class="w-full h-auto" src="./assets/images/wash_card.png" width="165"  height="165"  alt="Стиральные машины и сушилки Miele" loading="lazy" />
+                    </picture>  </figure>
+                  <div class="card-body h-full p-2 items-center justify-end absolute w-36 lg:w-full -bottom-6 lg:bottom-0 group-hover:bg-primary/90 transition-all duration-200 ease-in-out">
+                    <div class="flex flex-col card-list flex-col-reverse absolute bottom-0 w-[inherit] min-h-max translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
+                      <a href="/!#" class=" link no-underline w-full bg-primary/90 text-base-200 px-4 py-4 border-t border-accent text-body text-nowrap overflow-hidden text-ellipsis">
+                        <span class="">Смотреть все товары</span>
+                        </a>  <ul class="hover-list rounded-none px-4 space-y-1 py-4 text-base-200 list-inside">
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Духовые шкафы</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Панели конфорок</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Посудомоечные машины</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Холодильники и морозильники</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Вытяжки</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Кофемашины</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Пароварки</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Микроволновые печи</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Подогреватели посуды</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Модульные панели SmartLine</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Вакууматоры</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Аксессуары к технике для кухни</span>
+                      </a></li>
+                      </ul>
+                    </div>
+                    
+                    <div class="card-heading relative -bottom-4 lg:-bottom-2 text-center w-full px-2 py-4 bg-primary">
+                      <h3 class="text-base-100 font-normal text-sm group-hover:translate-y-full translate-y-0 transition-all duration-200 ease-in-out">Техника по уходу за бельем</h3>
+                    </div>
+                  </div>
+                </div><div class="card w-full bg-base-100 group w-full h-full py-0 rounded-none md:col-span-3 items-center max-w-72 overflow-y-hidden transition-all duration-300 ease-in">
+                  
+                  <figure class=" w-full h-40 lg:h-full">
+                    <picture class="rounded-none">
+                      <img class="w-full h-auto" src="./assets/images/kitchen_card.png" width="165"  height="165"  alt="Кухонная техника Miele" loading="lazy" />
+                    </picture>  </figure>
+                  <div class="card-body h-full p-2 items-center justify-end absolute w-36 lg:w-full -bottom-6 lg:bottom-0 group-hover:bg-primary/90 transition-all duration-200 ease-in-out">
+                    <div class="flex flex-col card-list flex-col-reverse absolute bottom-0 w-[inherit] min-h-max translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
+                      <a href="/!#" class=" link no-underline w-full bg-primary/90 text-base-200 px-4 py-4 border-t border-accent text-body text-nowrap overflow-hidden text-ellipsis">
+                        <span class="">Смотреть все товары</span>
+                        </a>  <ul class="hover-list rounded-none px-4 space-y-1 py-4 text-base-200 list-inside">
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Духовые шкафы</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Панели конфорок</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Посудомоечные машины</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Холодильники и морозильники</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Вытяжки</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Кофемашины</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Пароварки</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Микроволновые печи</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Подогреватели посуды</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Модульные панели SmartLine</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Вакууматоры</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Аксессуары к технике для кухни</span>
+                      </a></li>
+                      </ul>
+                    </div>
+                    
+                    <div class="card-heading relative -bottom-4 lg:-bottom-2 text-center w-full px-2 py-4 bg-primary">
+                      <h3 class="text-base-100 font-normal text-sm group-hover:translate-y-full translate-y-0 transition-all duration-200 ease-in-out">Техника для кухни</h3>
+                    </div>
+                  </div>
+                </div><div class="card w-full bg-base-100 group w-full h-full py-0 rounded-none md:col-span-3 items-center max-w-72 overflow-y-hidden transition-all duration-300 ease-in">
+                  
+                  <figure class=" w-full h-40 lg:h-full">
+                    <picture class="rounded-none">
+                      <img class="w-full h-auto" src="./assets/images/vacuum_card.png" width="165"  height="165"  alt="Техника для уборки Miele" loading="lazy" />
+                    </picture>  </figure>
+                  <div class="card-body h-full p-2 items-center justify-end absolute w-36 lg:w-full -bottom-6 lg:bottom-0 group-hover:bg-primary/90 transition-all duration-200 ease-in-out">
+                    <div class="flex flex-col card-list flex-col-reverse absolute bottom-0 w-[inherit] min-h-max translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
+                      <a href="/!#" class=" link no-underline w-full bg-primary/90 text-base-200 px-4 py-4 border-t border-accent text-body text-nowrap overflow-hidden text-ellipsis">
+                        <span class="">Смотреть все товары</span>
+                        </a>  <ul class="hover-list rounded-none px-4 space-y-1 py-4 text-base-200 list-inside">
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Духовые шкафы</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Панели конфорок</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Посудомоечные машины</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Холодильники и морозильники</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Вытяжки</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Кофемашины</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Пароварки</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Микроволновые печи</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Подогреватели посуды</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Модульные панели SmartLine</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Вакууматоры</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Аксессуары к технике для кухни</span>
+                      </a></li>
+                      </ul>
+                    </div>
+                    
+                    <div class="card-heading relative -bottom-4 lg:-bottom-2 text-center w-full px-2 py-4 bg-primary">
+                      <h3 class="text-base-100 font-normal text-sm group-hover:translate-y-full translate-y-0 transition-all duration-200 ease-in-out">Техника по уходу за домом</h3>
+                    </div>
+                  </div>
+                </div><div class="card w-full bg-base-100 group w-full h-full py-0 rounded-none md:col-span-3 items-center max-w-72 overflow-y-hidden transition-all duration-300 ease-in">
+                  
+                  <figure class=" w-full h-40 lg:h-full">
+                    <picture class="rounded-none">
+                      <img class="w-full h-auto" src="./assets/images/accessories_card.png" width="165"  height="165"  alt="Аксессуары Miele" loading="lazy" />
+                    </picture>  </figure>
+                  <div class="card-body h-full p-2 items-center justify-end absolute w-36 lg:w-full -bottom-6 lg:bottom-0 group-hover:bg-primary/90 transition-all duration-200 ease-in-out">
+                    <div class="flex flex-col card-list flex-col-reverse absolute bottom-0 w-[inherit] min-h-max translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
+                      <a href="/!#" class=" link no-underline w-full bg-primary/90 text-base-200 px-4 py-4 border-t border-accent text-body text-nowrap overflow-hidden text-ellipsis">
+                        <span class="">Смотреть все товары</span>
+                        </a>  <ul class="hover-list rounded-none px-4 space-y-1 py-4 text-base-200 list-inside">
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Духовые шкафы</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Панели конфорок</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Посудомоечные машины</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Холодильники и морозильники</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Вытяжки</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Кофемашины</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Пароварки</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Микроволновые печи</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Подогреватели посуды</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Модульные панели SmartLine</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Вакууматоры</span>
+                      </a></li>
+                        <li><a href="/!#" class=" link no-underline px-0 py-2 hover:circle text-body">
+                      <span class="text-nowrap overflow-hidden text-ellipsis">Аксессуары к технике для кухни</span>
+                      </a></li>
+                      </ul>
+                    </div>
+                    
+                    <div class="card-heading relative -bottom-4 lg:-bottom-2 text-center w-full px-2 py-4 bg-primary">
+                      <h3 class="text-base-100 font-normal text-sm group-hover:translate-y-full translate-y-0 transition-all duration-200 ease-in-out">Аксессуары и бытовая химия</h3>
+                    </div>
+                  </div>
+                </div>    </div>
+          
+          </section>  <section class="section section-test flex flex-col items-center justify-center responsive-container max-w-full overflow-hidden bg-base-100 py-0 bg-bannerWashM lg:bg-bannerWashD min-h-[60vh] md:min-h-[80vh] bg-cover bg-no-repeat">
+            <div class="w-full mx-auto responsive-container min-h-[inherit] flex flex-col justify-center">
+              
+              <div class="mb-4 md:mt-56">
+                <h2 class="text-h2-clamp text-center text-center md:text-left mb-4 text-base-200 font-medium mt-6">Измените свой подход к стирке</h2>
+                <p class="text-base-200 mb-2 font-sans lg:text-2xl font-normal max-w-lg xl:max-w-3xl">Стиральные машины Miele — это сочетание долговечности, инновационных технологий и бережного ухода за одеждой.</p>
+              </div>
+              
+          
+              <div class="section__content grid grid-cols-1 md:grid-cols-12 gap-8 place-items-stretch flex-grow">
+                <button type="button"  class="btn btn-accent max-w-[103px] rounded-full self-start justify-self-center md:justify-self-start md:col-span-3">
+                  <span class="">Подробнее</span>
+                </button>    </div>
+              <div class="divider divider-secondary w-[100vw] lg:max-w-full -translate-x-8 lg:translate-x-0 lg:self-center overflow-hidden"></div>
+                  <div class="section__footer flex flex-col w-full">
+                <span class="text-caption text-base-200 text-center md:text-right block mb-6 w-full">Откройте мир стирки Miele</span>
+              </div>
+          
+            </div>
+          </section>  <section class="section section-test flex flex-col items-center justify-center responsive-container max-w-full overflow-hidden bg-base-100 px-4 py-8 md:py-0 md:bg-bannerVacuumD min-h-[60vh] md:min-h-[80vh] bg-cover bg-no-repeat">
+            <div class="w-full mx-auto bg-base-300 md:bg-transparent min-h-[inherit] flex flex-col justify-center items-center md:items-start responsive-container">
+              
+              <div class="mb-4 md:mt-56">
+                <h2 class="text-h2-clamp text-center text-center mb-4 text-base-200 font-medium mt-6">Идеальный порядок — с техникой Miele</h2>
+                <p class="text-base-200 mb-2 font-sans lg:text-2xl font-normal max-w-lg xl:max-w-3xl text-center md:text-left">Стиральные машины Miele — это сочетание долговечности, инновационных технологий и бережного ухода за одеждой.</p>
+              </div>
+              
+          
+              <div class="section__content grid grid-cols-1 md:grid-cols-12 gap-8 place-items-stretch flex-grow place-items-center">
+                <button type="button"  class="btn btn-accent max-w-[103px] rounded-full self-start justify-self-center md:justify-self-start md:col-span-8">
+                  <span class="">Подробнее</span>
+                </button><picture class="rounded-none relative -bottom-10 md:hidden">
+                  <img class="w-full h-auto" src="./assets/images/vacuum_banner-m.png" width="400"  height="400"  alt="Идеальный порядок — с техникой Miele" loading="lazy" />
+                </picture>    </div>
+              <div class="hidden md:flex divider divider-secondary w-[100vw] lg:max-w-full -translate-x-4 lg:translate-x-0 lg:self-center"></div>
+              <div class="section__footer flex flex-col w-full">
+                <span class="text-caption text-base-200 text-center md:text-left hidden md:block mb-6 w-full">Всё для вашего дома</span>
+              </div>
+          
+            </div>
+          </section>  <section class="section section-test flex flex-col items-center justify-center responsive-container max-w-full overflow-hidden mb-14 bg-base-100 py-0 bg-bannerKitchenM lg:bg-bannerKitchenD min-h-[60vh] md:min-h-[80vh] bg-cover bg-no-repeat">
+            <div class="w-full mx-auto responsive-container min-h-[inherit] flex flex-col justify-center">
+              
+              <div class="mb-4 md:mt-56">
+                <h2 class="text-h2-clamp text-center text-center md:text-left mb-4 text-base-200 font-medium mt-6">Совершенство на вашей кухне</h2>
+                <p class="text-base-200 mb-2 font-sans lg:text-2xl font-normal max-w-lg xl:max-w-3xl">Стиральные машины Miele — это сочетание долговечности, инновационных технологий и бережного ухода за одеждой.</p>
+              </div>
+              
+          
+              <div class="section__content grid grid-cols-1 md:grid-cols-12 gap-8 place-items-stretch flex-grow justify-center">
+                <button type="button"  class="btn btn-accent max-w-[103px] rounded-full self-start justify-self-center md:justify-self-start md:col-span-3">
+                  <span class="">Подробнее</span>
+                </button>    </div>
+              <div class="divider divider-secondary w-[100vw] lg:max-w-full -translate-x-8 lg:translate-x-0 lg:self-center overflow-hidden"></div>
+                  <div class="section__footer flex flex-col w-full">
+                <span class="text-caption text-base-200 text-center md:text-right block mb-6 w-full">Уборка— по-новому</span>
+              </div>
+          
+            </div>
+          </section>  <section class="section section-cards flex flex-col items-center responsive-container overflow-hidden bg-base-100">
+              
+              <div class="mb-4">
+                <h2 class="text-h2-clamp">Откройте мир Miele</h2>
+              </div>
+              
+          
+              <div class="section__content grid grid-cols-2 md:grid-cols-12 place-items-center py-4 gap-y-9 gap-x-3">
+                <div class="card w-full bg-base-100 w-full h-full py-0 rounded-none md:col-span-3 items-start">
+                  
+                  <figure class=" w-full h-40 lg:h-full overflow-visible">
+                    <picture class="rounded-none">
+                      <img class="w-full h-auto" src="./assets/images/events.png" width="300"  height="300"  alt="Мероприятия" loading="lazy" />
+                    </picture>  </figure>
+                  <div class="card-body h-full w-full px-0 py-4 items-start justify-center">
+                    <div class="card-heading mb-4">
+                    </div>
+                    <div class="card-actions ">
+                      <a href="/!#" class=" link bg-transparent border-0 px-0 outline-transparent shadow-none no-underline hover:underline">
+                        <span class=" truncate text-sm lg:text-lg">Мероприятия</span>
+                        </a>    </div>
+                  </div>
+                </div><div class="card w-full bg-base-100 w-full h-full py-0 rounded-none md:col-span-3 items-start">
+                  
+                  <figure class=" w-full h-40 lg:h-full overflow-visible">
+                    <picture class="rounded-none">
+                      <img class="w-full h-auto" src="./assets/images/shops.png" width="300"  height="300"  alt="Фирменные магазины" loading="lazy" />
+                    </picture>  </figure>
+                  <div class="card-body h-full w-full px-0 py-4 items-start justify-center">
+                    <div class="card-heading mb-4">
+                    </div>
+                    <div class="card-actions ">
+                      <a href="/!#" class=" link bg-transparent border-0 px-0 outline-transparent shadow-none no-underline hover:underline">
+                        <span class=" truncate text-sm lg:text-lg">Фирменные магазины</span>
+                        </a>    </div>
+                  </div>
+                </div><div class="card w-full bg-base-100 w-full h-full py-0 rounded-none md:col-span-3 items-start">
+                  
+                  <figure class=" w-full h-40 lg:h-full overflow-visible">
+                    <picture class="rounded-none">
+                      <img class="w-full h-auto" src="./assets/images/support.png" width="300"  height="300"  alt="Сервисная поддержка" loading="lazy" />
+                    </picture>  </figure>
+                  <div class="card-body h-full w-full px-0 py-4 items-start justify-center">
+                    <div class="card-heading mb-4">
+                    </div>
+                    <div class="card-actions ">
+                      <a href="/!#" class=" link bg-transparent border-0 px-0 outline-transparent shadow-none no-underline hover:underline">
+                        <span class=" truncate text-sm lg:text-lg">Сервисная поддержка</span>
+                        </a>    </div>
+                  </div>
+                </div><div class="card w-full bg-base-100 w-full h-full py-0 rounded-none md:col-span-3 items-start">
+                  
+                  <figure class=" w-full h-40 lg:h-full overflow-visible">
+                    <picture class="rounded-none">
+                      <img class="w-full h-auto" src="./assets/images/blog.png" width="300"  height="300"  alt="Блог" loading="lazy" />
+                    </picture>  </figure>
+                  <div class="card-body h-full w-full px-0 py-4 items-start justify-center">
+                    <div class="card-heading mb-4">
+                    </div>
+                    <div class="card-actions ">
+                      <a href="/!#" class=" link bg-transparent border-0 px-0 outline-transparent shadow-none no-underline hover:underline">
+                        <span class=" truncate text-sm lg:text-lg">Блог</span>
+                        </a>    </div>
+                  </div>
+                </div>    </div>
+          
+          </section></main>      <footer class="footer responsive-container bg-base-300 text-base-100 text-center gap-0 p-10 divide-y md:divide-y-0 divide-base-300 [&amp;&gt;:first-child]:border-t md:[&amp;&gt;:first-child]:border-0 md:grid-flow-row md:grid-cols-2 lg:grid-cols-4 md:grid-rows-[auto_1fr] max-w-full">
+          
+          <div class="collapse bg-base-300 collapse-arrow rounded-none md:collapse-open">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title text-h4-clamp uppercase flex items-center">каталог</div>
+            <div class="collapse-content flex flex-col justify-items-start gap-y-4 text-sm">
+              <a href="" class="text-left">
+                <span class="text-base-100">Техника по уходу за бельем</span>
+                </a>    <a href="" class="text-left">
+                <span class="text-base-100">Техника для кухни</span>
+                </a>    <a href="" class="text-left">
+                <span class="text-base-100">Техника по уходу за домом</span>
+                </a>    <a href="" class="text-left">
+                <span class="text-base-100">Аксессуары и бытовая химия</span>
+                </a>    <a href="" class="text-left">
+                <span class="text-base-100">Новости и спецпредложения</span>
+                </a>    <a href="" class="text-left">
+                <span class="text-base-100">125 лет Miele</span>
+                </a>  </div>
+          </div>
+          <div class="collapse bg-base-300 collapse-arrow rounded-none md:collapse-open">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title text-h4-clamp uppercase flex items-center">сервис</div>
+            <div class="collapse-content flex flex-col justify-items-start gap-y-4 text-sm">
+              <a href="" class="text-left">
+                <span class="text-base-100">Удобная доставка</span>
+                </a>    <a href="" class="text-left">
+                <span class="text-base-100">Установка и настройка</span>
+                </a>    <a href="" class="text-left">
+                <span class="text-base-100">Ремонт и обслуживание</span>
+                </a>    <a href="" class="text-left">
+                <span class="text-base-100">Премиальные сервисные продукты</span>
+                </a>  </div>
+          </div>
+          <div class="collapse bg-base-300 collapse-arrow rounded-none md:collapse-open">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title text-h4-clamp uppercase flex items-center">о компании</div>
+            <div class="collapse-content flex flex-col justify-items-start gap-y-4 text-sm">
+              <a href="" class="text-left">
+                <span class="text-base-100">О компании Miele</span>
+                </a>    <a href="" class="text-left">
+                <span class="text-base-100">Новости</span>
+                </a>    <a href="" class="text-left">
+                <span class="text-base-100">Контакты</span>
+                </a>    <a href="" class="text-left">
+                <span class="text-base-100">Условия продажи</span>
+                </a>  </div>
+          </div>
+          <div class="flex flex-col w-full">
+            <div class="flex flex-col flex flex-col items-center">
+              <ul class="flex flex-col justify-between items-center gap-8 w-full">
+                <li><a href="tel:+7 (727) 313 23 00" class=" btn btn-link flex flex-row-reverse w-full text-base-100 no-underline px-0 w-full">
+              <div class="flex flex-col items-start gap-2 relative top-4">
+                <span class=" ">позвонить</span>
+                <span class=" text-xl">+7 (727) 313 23 00</span>
+              </div>
+              <svg class="" width="48" height="48" viewBox="0 0 40 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./assets/images/spritemap.svg#sprite-whatsapp"></use>
+              </svg></a></li>
+                <li><a href="tel:+7 (701) 102 72 37" class=" btn btn-link flex flex-row-reverse w-full text-base-100 no-underline px-0 w-full">
+              <div class="flex flex-col items-start gap-2 relative top-4">
+                <span class=" ">написать</span>
+                <span class=" text-xl">+7 (701) 102 72 37</span>
+              </div>
+              <svg class="" width="48" height="48" viewBox="0 0 40 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./assets/images/spritemap.svg#sprite-phone"></use>
+              </svg></a></li>
+              </ul>
+            </div>
+            
+            
+            <ul  class="flex flex-col items-start gap-2" >
+              <li>Пн-Чт 9:00-18:00</li>
+              <li>Пт 9:00-17:00</li>
+              <li>Сб-Вс выходной</li>
+            </ul>
+            
+            <div class="flex flex-col mb-2">
+              <ul class="flex flex-row justify-between items-center gap-2">
+                <li><a href="/#!" class=" btn btn-link w-12 h-12 px-0">
+              <svg class="bg-base-100 rounded-full" width="32" height="32" viewBox="0 0 40 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./assets/images/spritemap.svg#sprite-instagram"></use>
+              </svg></a></li>
+                <li><a href="/#!" class=" btn btn-link w-12 h-12 px-0">
+              <svg class="bg-base-100 rounded-full" width="32" height="32" viewBox="0 0 40 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./assets/images/spritemap.svg#sprite-facebook"></use>
+              </svg></a></li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="flex w-full md:col-span-2 lg:col-span-4">
+            <div class="w-3/5">
+              <nav  class="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between" >
+                <a href="/privacy-policy" class="link no-underline hover:underline text-left">
+                  <div class="flex flex-col items-start relative top-4">
+                    <span class="text-left text-xs ">© 2025 Miele.</span>
+                    <span class="text-left text-xs ">Все права защищены.</span>
+                  </div>
+                </a>  <a href="/privacy-policy" class="link text-left text-xs no-underline border-0 border-b-2 border-base-200">
+                  <span class="">Политика обработки ПД</span>
+                  </a></nav>
+              
+            </div>
+            <nav  class="flex flex-row items-center gap-2 w-2/5 justify-end" >
+              <a href="/privacy-policy" class="link no-underline hover:underline mb-4">
+                <svg class="w-16 h-12" width="28" height="24" viewBox="0 0 40 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./assets/images/spritemap.svg#sprite-payment_mc"></use>
+                </svg></a>  <a href="/copyright" class="link no-underline hover:underline mb-4">
+                <svg class="w-16 h-12" width="28" height="24" viewBox="0 0 40 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./assets/images/spritemap.svg#sprite-payment_visa"></use>
+                </svg></a>  <a href="" class="">
+              </a></nav>
+            
+          </div>
+        </footer>    </div>
+    </div>
+    <div class="drawer-side z-10">
+      <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+      <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+        <!-- Sidebar content here -->
+        <nav >
+          <a href="" class="">
+          </a></nav>
+        
+        
+      </ul>
+    </div>
+  </div>  </div>
+  <script  src="./assets/index-CWNNjaZr.js"></script>
+</body>
+
+</html>

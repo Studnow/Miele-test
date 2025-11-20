@@ -168,10 +168,10 @@ export default defineConfig({
         svg4everybody: false,
         svgo: true,
       },
-      inject: {
-        // если вы вставляете <svg> прямо в HTML
-        injectTo: "body-prepend",
-      },
+      // inject: {
+      //   // если вы вставляете <svg> прямо в HTML
+      //   injectTo: "body-prepend",
+      // },
     }),
     {
       handleHotUpdate({ file, server }) {
